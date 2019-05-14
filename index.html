@@ -1,0 +1,45 @@
+<!DOCTYPE>
+<html>
+<head>
+  <link href="style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+<br>
+<br>
+<center><h1> HANGMAN </h1></center> <br> <br>
+<center><h4> A game created by Emilie Zhang and Helen Peng </h4>
+</center> <br> <br>
+<center><img src="hangman.gif" alt="Image" height="200" width="400"> </img> </center>
+<ul>
+  <li> <a href="instructions.html"><i class="fa fa-question"></i>
+    <span> Instructions </span> </a>
+  </li>
+    <li> <a href="game.html"> <i class="fa fa-play"></i>
+    <span> Play! </span>  </a>
+    </li>
+        <li> <a onclick="playAudio()"> <i class="fa fa-volume-up"></i>
+       <span> Music</span>  </a> 
+       </li> <li><a onclick="pauseAudio()"> <i class="fa fa-volume-mute"></i>
+    <span> Mute </span>  </a>
+    </li>
+ </ul>  
+</center>
+<audio id="myAudio">
+  <source src="bensound-ukulele.ogg" type="audio/ogg">
+  <source src="bensound-ukulele.mp3" type="audio/mpeg">
+</audio>
+<script>
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+</body>
+</html>
+</html>
