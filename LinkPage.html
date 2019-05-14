@@ -1,0 +1,189 @@
+<html>
+<!-- Open in Microsoft Edge -->
+  <head>
+    <title>Index Page</title>
+	<style>
+  body {background-image: url("Homepagebground.jpg");
+	background-size:cover;
+	background-repeat: no-repeat;
+    }
+  A.class1 {color:orange;}
+A.class1:link  {text-decoration: color: orange; none; text-shadow: 3px 2px lightblue;}
+A.class1:hover {text-decoration: underline; color: green;}
+A.class1:active {text-decoration: none; color: red;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: lightgrey}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+h1 {
+    border: 2px solid black;
+    outline: #4CAF50 dashed 10px;
+    margin: auto;    
+    padding: 20px;
+    text-align: center;
+	background-color:white;
+}
+#Contour {
+    background-color: white;
+    width: 800px;
+    border: 25px solid lightblue;
+    padding: 10px;
+    margin: 25px;
+}
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+</style>
+  </head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <body>
+<ul>  
+	<li class="dropdown"> 
+    <a href="javascript:void(0)" class="dropbtn">Menu</a>
+    <div class="dropdown-content">
+      <a href="Homepage.html">Welcome Page</a>
+	  <a href="Website.html">Homepage</a>
+      <a href="Resume.html">Resume</a>
+      
+    </div>
+  </li>
+    <li><a href="Website.html">Current Projects</a></li>
+	<li style="float:right"><a class="active" href="Website.html">EMILIE YAHUI ZHANG</a></li>
+</ul>
+ <br>
+ <br>
+ <div id="myHeader"><H1> <center>  Table of Contents </center> </H1> </div>
+ <center>
+<div id="Contour">
+     <b>
+	<h2> A Start to HTML <br> </h2>
+	<a href="Archive/1.html" class="class1">Go to Exercise 1</a>
+	<br>
+	<a href="Archive/3.html" class="class1">Go to Exercise 3</a> 
+    <br>
+	<a href="Archive/4.html" class="class1">Go to Exercise 4</a> 
+    <br>
+	<a href="Archive/6.html" class="class1">Go to Exercise 6</a> 
+    <br>
+	<a href="Archive/7.html" class="class1">Go to Exercise 7</a> 
+    <br>
+</div>
+<div id="Contour">
+	<h2> Introducing Homer Simpson </h2>
+	<a href="Archive/2.html" class="class1">Go to Exercise 2</a> 
+    <br>
+	<a href="Archive/5.html" class="class1">Go to Exercise 5</a> 
+    <br>
+</div>
+<div id="Contour">
+<h2> CSS Projects! </h2>
+	<a href="Archive/CSS1.html" class="class1">Go to CSS1</a> 
+    <br>
+	<a href="Archive/CSS2.html" class="class1">Go to CSS2</a> 
+    <br>
+	<a href="Archive/CSS3.html" class="class1">Go to CSS3</a> 
+    <br>
+	<a href="Archive/CSS4.html" class="class1">Go to CSS4</a>
+    <br>
+</div>
+<div id="Contour">
+<h2> Tables! </h2>
+	<a href="Archive/Table 1.html" class="class1">Go to Table 1</a> 
+    <br>
+	<a href="Archive/Table 2.html" class="class1">Go to Table 2</a> 
+    <br>
+	<a href="Archive/Table 3.html" class="class1">Go to Table 3</a> 
+    <br>
+	<a href="Archive/Table 4.html" class="class1">Go to Table 4</a> 
+    <br>
+	<a href="Archive/Table 5.html" class="class1">Go to Table 5</a> 
+    <br>
+</div>
+<div id="Contour">
+<h2> Jackson </h2>
+	<a href="Archive/Jackson.html" class="class1">Jackson</a>
+	<br>
+</div>
+<div id="Contour">
+<h2> Images </h2>
+<a href="Images/BillGates.jpg" class="class1">Bill Gates</a> <br>
+<a href="Images/Office.jpg" class="class1">An Office</a> <br>
+<a href="Images/SunsetCam.jpg" class="class1">Photography at Sunset</a> <br>
+<a href="Images/Camera.jpg" class="class1">Camera</a> <br>
+<a href="Images/nomoney.png" class="class1">Money Symbol</a> <br>
+    <br>
+	</b>
+</div>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
+</script>
+</center>
+  </body>
+</html>
