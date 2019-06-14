@@ -1,45 +1,54 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html>
-<head>
-  <link href="style.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-</head>
-<body>
-<br>
-<br>
-<center><h1> HANGMAN </h1></center> <br> <br>
-<center><h4> A game created by Emilie Zhang and Helen Peng </h4>
-</center> <br> <br>
-<center><img src="hangman.gif" alt="Image" height="200" width="400"> </img> </center>
-<ul>
-  <li> <a href="instructions.html"><i class="fa fa-question"></i>
-    <span> Instructions </span> </a>
-  </li>
-    <li> <a href="game.html"> <i class="fa fa-play"></i>
-    <span> Play! </span>  </a>
-    </li>
-        <li> <a onclick="playAudio()"> <i class="fa fa-volume-up"></i>
-       <span> Music</span>  </a> 
-       </li> <li><a onclick="pauseAudio()"> <i class="fa fa-volume-mute"></i>
-    <span> Mute </span>  </a>
-    </li>
- </ul>  
-</center>
-<audio id="myAudio">
-  <source src="bensound-ukulele.ogg" type="audio/ogg">
-  <source src="bensound-ukulele.mp3" type="audio/mpeg">
-</audio>
-<script>
-var x = document.getElementById("myAudio"); 
+  <style> 
+  .wrapper {
+    text-align: center;
+}
 
-function playAudio() { 
-  x.play(); 
-} 
+.button {
+    position: absolute;
+    top: 50%; 
+     background-color: #FFE4B5;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+body, html {
+  height: 100%;
+}
 
-function pauseAudio() { 
-  x.pause(); 
-} 
-</script>
-</body>
-</html>
+.bg { 
+  /* The image used */
+  background-image: url("haunted.png");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+  </style>
+<body background="haunted.png "class="bg">  
+ <script>
+   function locations() {
+     location.href = "character.html";
+   } </script> <div class="wrapper">
+    <button class = "button" onclick="stuff()"> Play 
+  </button>
+</div> 
+   <script src="script.js"></script>
+  
+   <canvas width="716" height="300" id="mazecanvas">Can't load the maze game, because your browser doesn't support HTML5.</canvas>
+ 
+ 
+</body> 
 </html>
